@@ -1,0 +1,217 @@
+            html {
+                height: 100%;
+                width: 100%;
+            }
+            
+            body {
+                min-height: 100%;
+                height: 100%;
+                position: relative;
+                padding: 0%;
+                margin: 0%;
+            }
+            
+            .header {
+                height: 45%;
+                background-image: url('logo.jpg');
+                background-position: center;
+                background-position-x: center;
+                background-position-y: center;
+                background-repeat: no-repeat;
+                background-size: 15em;
+                width: 100%;
+            }
+            /*slide*/
+            
+            .banner {
+                display: flex;
+                width: 100%;
+                margin: 0%;
+            }
+            
+            ul.banner {
+                width: 90%;
+                height: auto;
+                animation: slide 15s infinite;
+                animation-timing-function: linear
+            }
+            
+            .banner li {
+                display: flex;
+                list-style: none;
+                margin: 1%;
+                padding: 0%;
+                width: 90%;
+                height: 100%;
+                overflow: hidden;
+            }
+            
+            #img {
+                height: 90%;
+                width: 100%;
+                border-radius: 50%;
+            }
+            
+            @keyframes slide {
+                0% {
+                    margin-left: -5%;
+                }
+                50% {
+                    margin-left: -50%;
+                }
+                100% {
+                    margin-left: -5%;
+                }
+            }
+            /* slide finish */
+            /*barra de navegacion*/
+            
+            #nav {
+                width: 100%;
+            }
+            
+            .nav-menu {
+                width: 100%;
+                font-family: 'Bubbler One', sans-serif;
+            }
+            
+            ul.nav-menu {
+                margin: 0%;
+                padding: 0%;
+                display: flex;
+                justify-content: space-between;
+                height: 30%;
+                width: 100%;
+            }
+            
+            li.nav-menu-item {
+                font-size: xx-large;
+                margin: auto;
+                text-transform: uppercase;
+                width: 100%;
+                display: flex;
+            }
+            
+            a.nav-menu-link {
+                color: rgb(104, 104, 104);
+                text-decoration: none;
+                text-align: center;
+                padding: auto;
+                margin: auto;
+            }
+            
+            a.nav-menu-link:hover {
+                background-color: rgb(0, 163, 73);
+                opacity: 50%;
+                color: rgb(255, 255, 255);
+                transition: 0.5s;
+            }
+            
+            a.nav-menu-link {
+                border-radius: 10px;
+                padding: 15px 20px;
+                transition: 0.5s;
+            }
+            /*titulo*/
+            
+            #h6 {
+                text-align: center;
+                margin: auto;
+                font-size: 30px;
+                background-color: white;
+                width: 100%;
+                font-family: 'Bubbler One', sans-serif;
+            }
+            /*Contenido*/
+            
+            .grid-container {
+                display: list-item;
+                grid-template-columns: 100%;
+                grid-template-rows: auto;
+                align-content: center;
+                margin: 2% auto;
+                font-family: 'Bubbler One', sans-serif;
+            }
+            
+            @media(min-width:300px) {
+                .grid-container {
+                    display: grid;
+                    grid-template-columns: 30% 30% 30%;
+                    justify-content: space-between;
+                    align-content: center;
+                    margin: 2% auto;
+                    font-family: 'Bubbler One', sans-serif;
+                }
+            }
+            
+            div {
+                align-content: center;
+                overflow: hidden;
+                border-radius: 5%;
+            }
+            
+            h4 {
+                background-color: rgb(209, 206, 206);
+                display: grid;
+                font-size: 22px;
+                text-align: center;
+                font-family: 'Bubbler One', sans-serif;
+            }
+            
+            img {
+                display: grid;
+                border-radius: 10%;
+                margin: auto;
+                overflow: hidden;
+                width: 100%;
+            }
+            /*pie de pagina*/
+            
+            .footer {
+                display: flex;
+                width: 100%;
+                margin: auto;
+                color: white;
+                background-color: rgb(168, 167, 167);
+            }
+            
+            .footer {
+                display: inline-block;
+                margin: auto;
+                font-size: 1.25rem;
+                text-align: center;
+                width: 100%;
+            }
+            
+            .footer.icons {
+                grid-area: footer;
+                text-align: center;
+                margin-top: 1%;
+                font-size: 200%;
+                transition: 0.5s;
+            }
+            
+            a#iconos {
+                color: teal;
+            }
+            
+            a#iconos:link {
+                color: teal;
+            }
+            
+            a#iconos:hover {
+                color: rgb(3, 65, 65);
+                font-size: 125%;
+                transition: 0.5s;
+            }
+            
+            #h5 {
+                grid-area: footer;
+                background-color: rgb(168, 167, 167);
+                color: rgb(255, 255, 255);
+                text-align: center;
+                margin: 0%;
+                width: 100%;
+                font-size: small;
+                font-family: Arial, Helvetica, sans-serif;
+            }

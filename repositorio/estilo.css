@@ -1,0 +1,191 @@
+                    /*pagina responsive*/
+                    
+                    html {
+                        height: 100%;
+                        width: 100%;
+                    }
+                    
+                    body {
+                        min-height: 100%;
+                        height: 100%;
+                        position: relative;
+                        padding: 0%;
+                        margin: 0%;
+                    }
+                    
+                    .grid-container {
+                        display: grid;
+                        grid: 'header' 'nav' 'sidebar' 'footer';
+                        font-family: 'Bubbler One', sans-serif;
+                    }
+                    /*resposive 3 cortes*/
+                    
+                    @media(min-width:200px) {
+                        .grid-container {
+                            grid-template: "header"200px "nav-menu"60px "sidebar" auto"footer"10px/ 100%;
+                        }
+                    }
+                    
+                    @media (min-width:600px) {
+                        .grid-container {
+                            grid-template: "header header"250px "nav-menu nav-menu"50px "sidebar sidebar"auto "footer footer" 70px/ 100%;
+                        }
+                    }
+                    
+                    @media (min-width:900px) {
+                        .grid-container {
+                            grid-template: "header header header"250px "nav-menu nav-menu nav-menu"60px "sidebar sidebar sidebar" auto "footer footer footer" 80px/ 100%;
+                        }
+                    }
+                    /*-----------------------*/
+                    
+                    .header {
+                        grid-area: header;
+                        width: 100%;
+                        background-image: url('logo.jpg');
+                        background-repeat: no-repeat;
+                        background-position-x: center;
+                        background-position-y: center;
+                        background-size: 15em;
+                        margin: 0%;
+                    }
+                    /*barra de navegacion*/
+                    
+                    @media(max-width:400px) {
+                        .nav-menu-link {
+                            font-size: 1.25rem;
+                            text-align: center;
+                            width: 100%;
+                        }
+                    }
+                    
+                    .nav-menu {
+                        height: 30%;
+                    }
+                    
+                    ul.nav-menu {
+                        margin: 0%;
+                        padding: 0%;
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                    }
+                    
+                    li.nav-menu-item {
+                        font-size: xx-large;
+                        margin: auto;
+                        text-transform: uppercase;
+                        width: 100%;
+                        display: flex;
+                    }
+                    
+                    a.nav-menu-link {
+                        color: rgb(104, 104, 104);
+                        text-decoration: none;
+                        padding: auto;
+                        margin: auto;
+                    }
+                    
+                    a.nav-menu-link:hover {
+                        background-color: rgb(0, 163, 73);
+                        opacity: 50%;
+                        color: rgb(255, 255, 255);
+                        transition: 0.5s;
+                    }
+                    
+                    a.nav-menu-link {
+                        border-radius: 10px;
+                        padding: 15px 20px;
+                        transition: 0.5s;
+                    }
+                    
+                    .sidebar {
+                        grid-area: sidebar;
+                        height: 45%;
+                        width: 100%
+                    }
+                    /*quienes somos*/
+                    
+                    #h3 {
+                        grid-area: sidebar;
+                        text-align: center;
+                        font-size: x-large;
+                        margin-top: 2%;
+                    }
+                    /*mapa*/
+                    
+                    iframe {
+                        width: 80%;
+                    }
+                    
+                    @media (min-width:600px) {
+                        #mapa {
+                            display: sidebar;
+                            margin: 1% 10%;
+                            width: 80%;
+                            height: auto;
+                        }
+                    }
+                    
+                    @media (max-width:600px) {
+                        #mapa {
+                            margin: 1% 10%;
+                            width: 80%;
+                            height: auto;
+                            display: sidebar;
+                        }
+                    }
+                    /*----------------------------*/
+                    
+                    #text {
+                        margin: 0% 10%;
+                        text-align: justify;
+                        font-size: 1.5rem;
+                        width: 80%;
+                    }
+                    
+                    #p1 {
+                        display: sidebar;
+                        margin: 1% 10%;
+                        text-align: center;
+                        font-size: 1.5rem;
+                    }
+                    
+                    .footer {
+                        grid-area: footer;
+                        width: 100%;
+                        font-size: 1.25rem;
+                        margin: auto;
+                        color: white;
+                        background-color: rgb(168, 167, 167);
+                    }
+                    
+                    .footer.icons {
+                        grid-area: footer;
+                        text-align: center;
+                        margin-top: 1%;
+                        font-size: 200%;
+                        transition: 0.5s;
+                    }
+                    
+                    a#iconos {
+                        color: teal;
+                    }
+                    
+                    a#iconos:link {
+                        color: teal;
+                    }
+                    
+                    a#iconos:hover {
+                        color: rgb(3, 65, 65);
+                        font-size: 125%;
+                        transition: 0.5s;
+                    }
+                    
+                    #h5 {
+                        background-color: rgb(168, 167, 167);
+                        color: rgb(255, 255, 255);
+                        text-align: center;
+                        margin: 0%;
+                        font-family: Arial, Helvetica, sans-serif;
+                    }

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bubbler+One&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/cbb3247d5b.js" crossorigin="anonymous"></script>
+    <link href="https://fontawesome.com/" rel="icons">
+    <link rel="stylesheet" href="contactenosestilos.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Contactanos</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src='validacion.js'></script>
+
+</head>
+
+<body>
+    <header class="header"></header>
+
+    <div class="nav">
+        <ul class="nav-menu">
+            <li class="nav-menu-item"><a href="index.html" class="nav-menu-link nav-link">Inicio</a></li>
+            <li class="nav-menu-item"><a href="productos.html" class="nav-menu-link nav-link">Productos</a></li>
+
+        </ul>
+    </div>
+    <!--Titulo-->
+    <h3 id="h3">Contactenos</h3>
+    <div class="grid-container">
+        <!--Formulario-->
+        <form class="row g-3 needs-validation" method="GET" id="formulario" action="">
+            <div class="col-md-4">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input class="form-control" id="nombre" placeholder="Ingrese su Nombre" value="">
+                <div class="valid-feedback">
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input class="form-control" id="apellido" placeholder="Ingrese su Apellido" value="">
+                <div class="valid-feedback">
+
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="email" class="form-label">E-mail</label>
+                <input class="form-control" id="email" placeholder="Ingrese su E-mail" value="">
+                <div class="valid-feedback">
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="ciudad" class="form-label">Ciudad</label>
+                <input class="form-control" value="" placeholder="Ingrese la Ciudad en la que vive" id="ciudad">
+                <div class="invalid-feedback">
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="provincia" class="form-label">Provincia</label>
+                <select class="form-select" id="provincia">
+          <option selected disabled value="">Seleccione</option>
+          <option>Buenos Aires</option> 
+          <option>Catamarca</option>   
+          <option>Chaco</option>  
+          <option>Chubut</option>    
+          <option>Córdoba</option>   
+          <option>Corrientes</option>
+          <option>Entre Ríos</option>         
+          <option>Formosa</option>
+           <option>Jujuy</option>             
+          <option>La Pampa</option>  
+          <option>La Rioja</option>   
+          <option>Mendoza</option>        
+          <option>Misiones</option>   
+          <option>Neuquén</option>    
+          <option>Río Negro</option>                                         
+          <option>Salta</option>
+          <option>San Juan</option>          
+           <option>San Luis</option>  
+          <option>Santa Cruz</option>  
+          <option>Santa Fe</option>                   
+          <option>Santiago del Estero</option>    
+          <option>Tierra del Fuego</option>              
+          <option>Tucumán</option>
+          
+        </select>
+                <div class="invalid-feedback" value=" Por favor,introduzca la provincia donde reside.">
+
+                </div>
+            </div>
+            <div class="col-md-12">
+                <textarea class="form-control" placeholder="Dejenos su consulta o comentario aquí" id="mensaje" value="" style="height:200px"></textarea>
+                <label for="mensaje"></label>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-secondary btn-lg">Enviar</button>
+            </div>
+
+    </div>
+    </div>
+    </form>
+
+    <footer>
+        <div class="footer icons">
+            <a id="iconos" href="https://www.facebook.com/Navarra-Deco-112987601154274"><i class="fab fa-facebook-square"></i></a>
+            <a id="iconos" href="https://www.instagram.com/navarra.deco.design/"><i class="fab fa-instagram-square"></i></a>
+            <a id="iconos" href="#"><i class="fab fa-whatsapp-square"></i></a>
+        </div>
+
+        <h5 id="h5">Copyright &copy;2020-2021 Navarra Deco. Todos los derechos reservados.</h5>
+    </footer>
+
+</body>
+
+</html>
